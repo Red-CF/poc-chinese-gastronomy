@@ -110,21 +110,24 @@ const cnyToEur = (cny: number) => Math.round(cny * CNY_TO_EUR * 10) / 10;
         <div class="space-y-4">
           {ciudades
             .sort((a, b) => a[1].promedio_diario - b[1].promedio_diario)
-            .map(([nombre, data]) => (
-              <div class="flex items-center gap-4">
-                <div class="w-32 font-semibold text-right">{nombre}</div>
-                <div class="flex-1">
-                  <div class="bg-gray-200 rounded-full h-8 relative overflow-hidden">
-                    <div
-                      class="h-full rounded-full flex items-center px-4 text-white font-bold text-sm transition-all"
-                      style={`width: ${(data.promedio_diario / 280) * 100}%; background-color: ${data.color}`}
-                    >
-                      {data.promedio_diario} CNY ({cnyToEur(data.promedio_diario)} €)
+            .map(([nombre, data]) => {
+              const barWidth = Math.max((data.promedio_diario / 280) * 100, 30);
+              return (
+                <div class="flex items-center gap-4">
+                  <div class="w-32 font-semibold text-right">{nombre}</div>
+                  <div class="flex-1">
+                    <div class="bg-gray-200 rounded-full h-10 relative overflow-hidden">
+                      <div
+                        class="h-full rounded-full flex items-center px-4 text-white font-bold text-xs md:text-sm transition-all whitespace-nowrap"
+                        style={`width: ${barWidth}%; background-color: ${data.color}`}
+                      >
+                        {data.promedio_diario} CNY ({cnyToEur(data.promedio_diario)} €)
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))
+              );
+            })
           }
         </div>
 
