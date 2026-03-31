@@ -26,29 +26,24 @@ const categorias = [...new Set(data.restaurantes.map(r => r.categoria))];
 
 // Función para generar URL de imagen placeholder por categoría
 const getRestaurantImage = (categoria: string, idx: number) => {
-  const keywords: Record<string, string> = {
-    'Restaurante': 'chinese-food,restaurant',
-    'Cafetería': 'coffee-shop,cafe',
-    'Casa de Té': 'tea-house,asian',
-    'Bar/Cocktail': 'cocktail-bar,nightlife',
-    'Vida Nocturna': 'nightclub,party'
+  // Usar placehold.co con colores por categoría - 100% confiable
+  const colors: Record<string, { bg: string; text: string }> = {
+    'Restaurante': { bg: 'DC143C', text: 'FFFFFF' },
+    'Cafetería': { bg: '8B4513', text: 'FFFFFF' },
+    'Casa de Té': { bg: '228B22', text: 'FFFFFF' },
+    'Bar/Cocktail': { bg: '4B0082', text: 'FFFFFF' },
+    'Vida Nocturna': { bg: '2F2F4F', text: 'FFFFFF' }
   };
-  const keyword = keywords[categoria] || 'restaurant';
-  // Usar Unsplash Source con keywords específicas
-  return `https://images.unsplash.com/photo-${getUnsplashId(categoria, idx)}?w=400&h=200&fit=crop`;
-};
-
-// IDs reales de Unsplash para cada categoría
-const getUnsplashId = (cat: string, idx: number) => {
-  const ids: Record<string, string[]> = {
-    'Restaurante': ['15593d2a3c9a77f8', '151724873544b9a5e', '155536676989f4a8d', '1414615052257-66b9a6a52a7'],
-    'Cafetería': ['1509049461765f39ca', '1521019426853-453f44c55bcc', '1525625422297-35e96aa1a73d', '1497933701321-e1c73a8b9f6a'],
-    'Casa de Té': ['1576055744230-16a5a0e69e8d', '1544798868-0b5e67e4f7c8', '1576055742379-42b4e96d7a7d', '1563806429-5a5e5a81aa6e'],
-    'Bar/Cocktail': ['1514362545857-3bcbe82439ca', '1572394969825-8986c8e82f28', '1536968734890-8b9c25f6d71e', '1470332374589-90c7e7f66675'],
-    'Vida Nocturna': ['1545124942-2a6dc969bb63', '1566410900-2b91b7a8c6d5', '1516450360452-90c4b6a8c6d5', '1514528492681-1b5c7f6d6d5e']
+  const icons: Record<string, string> = {
+    'Restaurante': '🍜',
+    'Cafetería': '☕',
+    'Casa de Té': '🍵',
+    'Bar/Cocktail': '🍸',
+    'Vida Nocturna': '🌃'
   };
-  const categoryIds = ids[cat] || ids['Restaurante'];
-  return categoryIds[idx % categoryIds.length];
+  const color = colors[categoria] || { bg: '808080', text: 'FFFFFF' };
+  const icon = icons[categoria] || '🍽️';
+  return `https://placehold.co/400x200/${color.bg}/${color.text}?text=${encodeURIComponent(icon + ' ' + categoria)}`;
 };
 ---
 
