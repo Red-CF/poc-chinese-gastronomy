@@ -57,7 +57,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐½", 
         "destacado": "Michelin Bib 2026. #1 consensus XLB",
         "especialidadTag": "Xiaolongbao",
-        "amapUrl": "https://www.amap.com/search?query=莱莱小笼+上海"
+        "amapUrl": "https://www.amap.com/search?query=莱莱小笼"
       },
       { 
         "nombre": "Jia Jia Tang Bao 佳家汤包", 
@@ -87,7 +87,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐ Michelin", 
         "destacado": "1920s villa. Crab roe on toast",
         "especialidadTag": "Hairy Crab",
-        "amapUrl": "https://www.amap.com/search?query=福1088+上海"
+        "amapUrl": "https://www.amap.com/search?query=福1088"
       },
       { 
         "nombre": "Yang's Fry Dumplings 小杨生煎", 
@@ -106,7 +106,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "40-55 CNY", 
         "rating": "⭐⭐⭐⭐½", 
         "destacado": "48hr roasted beans. 3hr queues",
-        "amapUrl": "https://www.amap.com/search?query=Blue+Bottle+上海"
+        "amapUrl": "https://www.amap.com/search?query=Blue+Bottle"
       },
       { 
         "nombre": "Manner Coffee", 
@@ -115,7 +115,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "15-20 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "459+ stores. ¥15 flat white",
-        "amapUrl": "https://www.amap.com/search?query=Manner+Coffee+上海"
+        "amapUrl": "https://www.amap.com/search?query=Manner+Coffee"
       },
       { 
         "nombre": "Café del Volcán", 
@@ -151,7 +151,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "9.9-18 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "26,000+ stores China. App-only",
-        "amapUrl": "https://www.amap.com/search?query=瑞幸咖啡+上海"
+        "amapUrl": "https://www.amap.com/search?query=瑞幸咖啡"
       },
       
       // NUEVOS CAFÉS TÍPICOS
@@ -162,7 +162,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "30-50 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "WBC champion roaster. Multiple locations",
-        "amapUrl": "https://www.amap.com/search?query=Seesaw+Coffee+上海"
+        "amapUrl": "https://www.amap.com/search?query=Seesaw+Coffee"
       },
       { 
         "nombre": "M Stand", 
@@ -171,7 +171,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "25-40 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Purple logo. Minimalist design. Oat milk ¥5 extra",
-        "amapUrl": "https://www.amap.com/search?query=M+Stand+上海"
+        "amapUrl": "https://www.amap.com/search?query=M+Stand"
       },
       { 
         "nombre": "Peet's Coffee", 
@@ -180,7 +180,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "35-50 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Berkeley original. Dark roasts. Kerry Center",
-        "amapUrl": "https://www.amap.com/search?query=Peet's+Coffee+上海"
+        "amapUrl": "https://www.amap.com/search?query=Peet's+Coffee"
       },
       
       // COCKTAIL BARS
@@ -209,7 +209,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "90-150 CNY", 
         "rating": "⭐⭐⭐⭐½", 
         "destacado": "1930s Shanghai vibes. Classic cocktails. Speakeasy entrance",
-        "amapUrl": "https://www.amap.com/search?query=Union+Trading+Company+上海"
+        "amapUrl": "https://www.amap.com/search?query=Union+Trading+Company"
       },
       { 
         "nombre": "The Nest", 
@@ -218,7 +218,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "120-200 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "32nd floor. Skyline views. Molecular cocktails",
-        "amapUrl": "https://www.amap.com/search?query=The+Nest+上海"
+        "amapUrl": "https://www.amap.com/search?query=The+Nest"
       },
       
       // VIDA NOCTURNA
@@ -229,7 +229,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "100-300 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Underground techno. 2AM-6AM. International DJs",
-        "amapUrl": "https://www.amap.com/search?query=Elevator+Club+上海"
+        "amapUrl": "https://www.amap.com/search?query=Elevator+Club"
       },
       { 
         "nombre": "Shelter", 
@@ -238,7 +238,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "80-200 CNY", 
         "rating": "⭐⭐⭐⭐½", 
         "destacado": "Former bomb shelter. Indie bands. Electronic nights",
-        "amapUrl": "https://www.amap.com/search?query=Shelter+上海"
+        "amapUrl": "https://www.amap.com/search?query=Shelter"
       },
       { 
         "nombre": "Arkham Shanghai", 
@@ -247,7 +247,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "150-400 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Warehouse rave. Techno/house. After-hours til 8AM",
-        "amapUrl": "https://www.amap.com/search?query=Arkham+上海"
+        "amapUrl": "https://www.amap.com/search?query=Arkham"
       },
       { 
         "nombre": "Found 158", 
@@ -256,14 +256,14 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "60-150 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Creative park. Multiple bars. Outdoor seating",
-        "amapUrl": "https://www.amap.com/search?query=Found+158+上海"
+        "amapUrl": "https://www.amap.com/search?query=Found+158"
       }
     ],
     "rutas": [
       { "nombre": "Xiaolongbao Crawl", "duracion": "7:00-11:00 AM", "stops": "Da Hu Chun → Jia Jia → Yang's → Lai Lai", "costo": "¥80-120", "distancia": "~2km Huangpu", "amapUrl": "https://www.amap.com/search?query=小笼包+上海黄浦区" },
-      { "nombre": "French Concession Café", "duracion": "Weekend morning", "stops": "Manner → RAC → Volcán → % Arabica", "costo": "¥150-200", "distancia": "~3km", "amapUrl": "https://www.amap.com/search?query=法租界咖啡馆+上海" },
+      { "nombre": "French Concession Café", "duracion": "Weekend morning", "stops": "Manner → RAC → Volcán → % Arabica", "costo": "¥150-200", "distancia": "~3km", "amapUrl": "https://www.amap.com/search?query=法租界咖啡馆" },
       { "nombre": "Cocktail Bar Hopping", "duracion": "Evening 8PM-1AM", "stops": "Speak Low → Union Trading → Époque → The Nest", "costo": "¥400-600", "distancia": "~3km Bund area", "amapUrl": "https://www.amap.com/search?query=酒吧街+上海外滩" },
-      { "nombre": "Underground Night", "duracion": "Late night 12AM-6AM", "stops": "Found 158 → Shelter → Elevator → After-hours", "costo": "¥300-500", "distancia": "Various", "amapUrl": "https://www.amap.com/search?query=夜店+上海" }
+      { "nombre": "Underground Night", "duracion": "Late night 12AM-6AM", "stops": "Found 158 → Shelter → Elevator → After-hours", "costo": "¥300-500", "distancia": "Various", "amapUrl": "https://www.amap.com/search?query=夜店" }
     ],
     "imagen": "/images/shanghai.svg",
     "color": "#990011"
@@ -289,7 +289,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐⭐", 
         "destacado": "#1 local pick. NO reservations",
         "especialidadTag": "Peking Duck",
-        "amapUrl": "https://www.amap.com/search?query=四季民福+北京"
+        "amapUrl": "https://www.amap.com/search?query=四季民福"
       },
       { 
         "nombre": "Da Dong 大董", 
@@ -299,7 +299,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐ Michelin", 
         "destacado": "Superlean duck ¥268",
         "especialidadTag": "Peking Duck",
-        "amapUrl": "https://www.amap.com/search?query=大董烤鸭+北京"
+        "amapUrl": "https://www.amap.com/search?query=大董烤鸭"
       },
       { 
         "nombre": "Bianyifang 便宜坊", 
@@ -309,7 +309,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Founded 1416 Ming Dynasty",
         "especialidadTag": "Peking Duck",
-        "amapUrl": "https://www.amap.com/search?query=便宜坊烤鸭+北京"
+        "amapUrl": "https://www.amap.com/search?query=便宜坊烤鸭"
       },
       { 
         "nombre": "Liqun 利群烤鸭", 
@@ -328,7 +328,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "300-350 CNY", 
         "rating": "⭐ Michelin", 
         "destacado": "Chestnut-fed duck. English service",
-        "amapUrl": "https://www.amap.com/search?query=Country+Kitchen+北京"
+        "amapUrl": "https://www.amap.com/search?query=Country+Kitchen"
       },
       { 
         "nombre": "Jubaoyuan 聚宝源", 
@@ -348,7 +348,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Michelin Bib. Real Beijinger test",
         "especialidadTag": "Douzhir",
-        "amapUrl": "https://www.amap.com/search?query=尹三豆汁+北京"
+        "amapUrl": "https://www.amap.com/search?query=尹三豆汁"
       },
       { 
         "nombre": "Metal Hands Coffee 铁手", 
@@ -375,13 +375,13 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "180-380 CNY", 
         "rating": "⭐⭐⭐⭐⭐", 
         "destacado": "Beijing opera shows. 200+ heads of state",
-        "amapUrl": "https://www.amap.com/search?query=老舍茶馆+北京"
+        "amapUrl": "https://www.amap.com/search?query=老舍茶馆"
       }
     ],
     "rutas": [
-      { "nombre": "Hutong Breakfast Walk", "duracion": "6:00-10:00 AM", "stops": "Yin San → Yao Ji → Jianbing cart", "costo": "¥50-80", "distancia": "Chongwen-Drum Tower", "amapUrl": "https://www.amap.com/search?query=胡同早餐+北京" },
-      { "nombre": "Imperial Cuisine Route", "duracion": "Full day", "stops": "Fangshan → Jing Zhao Yin → Lao She", "costo": "¥200-500", "distancia": "Various", "amapUrl": "https://www.amap.com/search?query=宫廷菜+北京" },
-      { "nombre": "Craft Coffee Trail", "duracion": "Half day", "stops": "Metal Hands → Barista → Soloist", "costo": "¥150-250", "distancia": "~4km", "amapUrl": "https://www.amap.com/search?query=精品咖啡+北京" }
+      { "nombre": "Hutong Breakfast Walk", "duracion": "6:00-10:00 AM", "stops": "Yin San → Yao Ji → Jianbing cart", "costo": "¥50-80", "distancia": "Chongwen-Drum Tower", "amapUrl": "https://www.amap.com/search?query=胡同早餐" },
+      { "nombre": "Imperial Cuisine Route", "duracion": "Full day", "stops": "Fangshan → Jing Zhao Yin → Lao She", "costo": "¥200-500", "distancia": "Various", "amapUrl": "https://www.amap.com/search?query=宫廷菜" },
+      { "nombre": "Craft Coffee Trail", "duracion": "Half day", "stops": "Metal Hands → Barista → Soloist", "costo": "¥150-250", "distancia": "~4km", "amapUrl": "https://www.amap.com/search?query=精品咖啡" }
     ],
     "imagen": "/images/beijing.svg",
     "color": "#8B0000"
@@ -407,7 +407,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐⭐", 
         "destacado": "#1 Dianping. 2-4hr queues",
         "especialidadTag": "Mala Hotpot",
-        "amapUrl": "https://www.amap.com/search?query=朱光玉+重庆"
+        "amapUrl": "https://www.amap.com/search?query=朱光玉"
       },
       { 
         "nombre": "Peijie 珮姐老火锅", 
@@ -417,7 +417,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Black Pearl. Late-night",
         "especialidadTag": "Mala Hotpot",
-        "amapUrl": "https://www.amap.com/search?query=珮姐老火锅+重庆"
+        "amapUrl": "https://www.amap.com/search?query=珮姐老火锅"
       },
       { 
         "nombre": "Yuwei Xiaoyu 渝味晓宇", 
@@ -427,7 +427,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐", 
         "destacado": "A Bite of China featured",
         "especialidadTag": "Mala Hotpot",
-        "amapUrl": "https://www.amap.com/search?query=渝味晓宇+重庆"
+        "amapUrl": "https://www.amap.com/search?query=渝味晓宇"
       },
       { 
         "nombre": "Pipa Garden 枇杷园", 
@@ -437,7 +437,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐", 
         "destacado": "LARGEST hotpot 700+ tables",
         "especialidadTag": "Mala Hotpot",
-        "amapUrl": "https://www.amap.com/search?query=枇杷园火锅+重庆"
+        "amapUrl": "https://www.amap.com/search?query=枇杷园火锅"
       },
       { 
         "nombre": "Zhao Er 赵二火锅", 
@@ -446,7 +446,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "60-80 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Lonely Planet. Best budget",
-        "amapUrl": "https://www.amap.com/search?query=赵二火锅+重庆"
+        "amapUrl": "https://www.amap.com/search?query=赵二火锅"
       },
       { 
         "nombre": "Huashi Wandza 花市豌杂面", 
@@ -456,7 +456,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐½", 
         "destacado": "Film location. Dianping 4.5",
         "especialidadTag": "Xiaomian Noodles",
-        "amapUrl": "https://www.amap.com/search?query=花市豌杂面+重庆"
+        "amapUrl": "https://www.amap.com/search?query=花市豌杂面"
       },
       { 
         "nombre": "Song Xiaomian 宋小面", 
@@ -466,7 +466,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐½", 
         "destacado": "#1 Top 50 Xiaomian 2024",
         "especialidadTag": "Xiaomian Noodles",
-        "amapUrl": "https://www.amap.com/search?query=宋小面+重庆"
+        "amapUrl": "https://www.amap.com/search?query=宋小面"
       },
       { 
         "nombre": "Jiaotong Chaguan 交通茶馆", 
@@ -475,7 +475,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "8-10 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "1970s teahouse. Crazy Stone film",
-        "amapUrl": "https://www.amap.com/search?query=交通茶馆+重庆"
+        "amapUrl": "https://www.amap.com/search?query=交通茶馆"
       },
       { 
         "nombre": "Shuguan Coffee 树冠咖啡", 
@@ -484,12 +484,12 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "30-40 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "100yr residence. Art gallery",
-        "amapUrl": "https://www.amap.com/search?query=树冠咖啡+重庆"
+        "amapUrl": "https://www.amap.com/search?query=树冠咖啡"
       }
     ],
     "rutas": [
-      { "nombre": "Ultimate Hotpot Crawl", "duracion": "2 days", "stops": "Yuwei → Zhu Guangyu → Peijie → Pipa", "costo": "¥550 total", "distancia": "Various", "amapUrl": "https://www.amap.com/search?query=火锅+重庆" },
-      { "nombre": "Nanbin Road Dining", "duracion": "Evening", "stops": "Yi Laotou → Riverside dining → Night skyline", "costo": "¥70-100", "distancia": "~2km", "amapUrl": "https://www.amap.com/search?query=南滨路+重庆" }
+      { "nombre": "Ultimate Hotpot Crawl", "duracion": "2 days", "stops": "Yuwei → Zhu Guangyu → Peijie → Pipa", "costo": "¥550 total", "distancia": "Various", "amapUrl": "https://www.amap.com/search?query=火锅" },
+      { "nombre": "Nanbin Road Dining", "duracion": "Evening", "stops": "Yi Laotou → Riverside dining → Night skyline", "costo": "¥70-100", "distancia": "~2km", "amapUrl": "https://www.amap.com/search?query=南滨路" }
     ],
     "imagen": "/images/chongqing.svg",
     "color": "#DC143C"
@@ -514,7 +514,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "500-1000 CNY", 
         "rating": "⭐⭐ Michelin", 
         "destacado": "18 seats. 25-course tasting",
-        "amapUrl": "https://www.amap.com/search?query=玉芝兰+成都"
+        "amapUrl": "https://www.amap.com/search?query=玉芝兰"
       },
       { 
         "nombre": "Chen Mapo Tofu 陈麻婆", 
@@ -524,7 +524,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐", 
         "destacado": "1862 original. UNESCO heritage",
         "especialidadTag": "Mapo Tofu",
-        "amapUrl": "https://www.amap.com/search?query=陈麻婆豆腐+成都"
+        "amapUrl": "https://www.amap.com/search?query=陈麻婆豆腐"
       },
       { 
         "nombre": "Song Yun Ze 松云泽", 
@@ -533,7 +533,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "400-800 CNY", 
         "rating": "⭐ Michelin", 
         "destacado": "Historical banquet format",
-        "amapUrl": "https://www.amap.com/search?query=松云泽+成都"
+        "amapUrl": "https://www.amap.com/search?query=松云泽"
       },
       { 
         "nombre": "Gang Guan Chang 钢管厂", 
@@ -543,7 +543,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐", 
         "destacado": "THE chuanchuan. Founded 1987",
         "especialidadTag": "Chuanchuan",
-        "amapUrl": "https://www.amap.com/search?query=钢管厂小郡肝+成都"
+        "amapUrl": "https://www.amap.com/search?query=钢管厂小郡肝"
       },
       { 
         "nombre": "Gan Ji Feichangfen 甘记", 
@@ -552,7 +552,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "15-25 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "NEW 2024 Michelin Bib",
-        "amapUrl": "https://www.amap.com/search?query=甘记肥肠粉+成都"
+        "amapUrl": "https://www.amap.com/search?query=甘记肥肠粉"
       },
       { 
         "nombre": "Heming Tea House 鹤鸣茶社", 
@@ -570,7 +570,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "25-40 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "2013 third-wave pioneer",
-        "amapUrl": "https://www.amap.com/search?query=如本咖啡+成都"
+        "amapUrl": "https://www.amap.com/search?query=如本咖啡"
       },
       { 
         "nombre": "Five Elephant 五象", 
@@ -579,13 +579,13 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "30-50 CNY", 
         "rating": "⭐⭐⭐⭐½", 
         "destacado": "Berlin roaster. Air-shipped beans",
-        "amapUrl": "https://www.amap.com/search?query=五象咖啡+成都"
+        "amapUrl": "https://www.amap.com/search?query=五象咖啡"
       }
     ],
     "rutas": [
-      { "nombre": "Sichuan Breakfast Tour", "duracion": "7:00-10:00 AM", "stops": "Gan Ji → Zhizi Baozi → Xiao Tan Douhua", "costo": "¥30-50", "distancia": "~2km", "amapUrl": "https://www.amap.com/search?query=四川早餐+成都" },
-      { "nombre": "Jinli Food Walk", "duracion": "Afternoon", "stops": "San Da Pao → Bo Bo Ji → Dan Dan Mian", "costo": "¥40-60", "distancia": "550m", "amapUrl": "https://www.amap.com/search?query=锦里小吃街+成都" },
-      { "nombre": "Kuanzhai Alley Dining", "duracion": "Half day", "stops": "Heritage → % Arabica → Street vendors", "costo": "¥100-200", "distancia": "~1km", "amapUrl": "https://www.amap.com/search?query=宽窄巷子+成都" }
+      { "nombre": "Sichuan Breakfast Tour", "duracion": "7:00-10:00 AM", "stops": "Gan Ji → Zhizi Baozi → Xiao Tan Douhua", "costo": "¥30-50", "distancia": "~2km", "amapUrl": "https://www.amap.com/search?query=四川早餐" },
+      { "nombre": "Jinli Food Walk", "duracion": "Afternoon", "stops": "San Da Pao → Bo Bo Ji → Dan Dan Mian", "costo": "¥40-60", "distancia": "550m", "amapUrl": "https://www.amap.com/search?query=锦里小吃街" },
+      { "nombre": "Kuanzhai Alley Dining", "duracion": "Half day", "stops": "Heritage → % Arabica → Street vendors", "costo": "¥100-200", "distancia": "~1km", "amapUrl": "https://www.amap.com/search?query=宽窄巷子" }
     ],
     "imagen": "/images/chengdu.svg",
     "color": "#B8860B"
@@ -610,7 +610,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐", 
         "destacado": "THE most famous. Taxi drivers know",
         "especialidadTag": "Sanxiaguo",
-        "amapUrl": "https://www.amap.com/search?query=胡师傅三下锅+张家界"
+        "amapUrl": "https://www.amap.com/search?query=胡师傅三下锅"
       },
       { 
         "nombre": "Qin Dama 秦大妈", 
@@ -619,7 +619,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "66 CNY", 
         "rating": "⭐⭐⭐⭐½", 
         "destacado": "Gold medal. Warm service",
-        "amapUrl": "https://www.amap.com/search?query=秦大妈+张家界"
+        "amapUrl": "https://www.amap.com/search?query=秦大妈"
       },
       { 
         "nombre": "Xianjian Tucai 湘健", 
@@ -637,7 +637,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "80 CNY", 
         "rating": "⭐⭐⭐⭐½", 
         "destacado": "Rock ear chicken ¥98. Celebrity visits",
-        "amapUrl": "https://www.amap.com/search?query=索溪山寨+张家界"
+        "amapUrl": "https://www.amap.com/search?query=索溪山寨"
       },
       { 
         "nombre": "Yinxiang Niyan 印象鲵宴", 
@@ -646,7 +646,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "85-103 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Giant salamander ¥128-168",
-        "amapUrl": "https://www.amap.com/search?query=印象鲵宴+张家界"
+        "amapUrl": "https://www.amap.com/search?query=印象鲵宴"
       },
       { 
         "nombre": "Zhu Naoke 猪脑壳", 
@@ -656,12 +656,12 @@ export const ciudadesData: Record<string, Ciudad> = {
         "rating": "⭐⭐⭐⭐⭐", 
         "destacado": "Light of Zhangjiajie. 1,000+ bowls/day",
         "especialidadTag": "Cold Noodles",
-        "amapUrl": "https://www.amap.com/search?query=猪脑壳凉面+张家界"
+        "amapUrl": "https://www.amap.com/search?query=猪脑壳凉面"
       }
     ],
     "rutas": [
-      { "nombre": "Tujia Food Discovery", "duracion": "Full day", "stops": "Cold noodles → Hu Shifu → Qin Dama → Night market", "costo": "¥120-180", "distancia": "City center", "amapUrl": "https://www.amap.com/search?query=土家菜+张家界" },
-      { "nombre": "Scenic Area Dining", "duracion": "Park day", "stops": "Zhu Naoke breakfast → Pack snacks → Suoxi dinner", "costo": "¥100-150", "distancia": "Wulingyuan", "amapUrl": "https://www.amap.com/search?query=武陵源+张家界" }
+      { "nombre": "Tujia Food Discovery", "duracion": "Full day", "stops": "Cold noodles → Hu Shifu → Qin Dama → Night market", "costo": "¥120-180", "distancia": "City center", "amapUrl": "https://www.amap.com/search?query=土家菜" },
+      { "nombre": "Scenic Area Dining", "duracion": "Park day", "stops": "Zhu Naoke breakfast → Pack snacks → Suoxi dinner", "costo": "¥100-150", "distancia": "Wulingyuan", "amapUrl": "https://www.amap.com/search?query=武陵源" }
     ],
     "imagen": "/images/zhangjiajie.svg",
     "color": "#FF4500"
@@ -685,7 +685,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "30-44 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Near Hongqiao. 10+ years. Authentic",
-        "amapUrl": "https://www.amap.com/search?query=大使饭店+凤凰古城"
+        "amapUrl": "https://www.amap.com/search?query=大使饭店"
       },
       { 
         "nombre": "Lao Genjiu 老根酒家", 
@@ -694,7 +694,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "33-56 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Best blood duck. Riverside",
-        "amapUrl": "https://www.amap.com/search?query=老根酒家+凤凰"
+        "amapUrl": "https://www.amap.com/search?query=老根酒家"
       },
       { 
         "nombre": "Wanmuchun 万木春", 
@@ -703,7 +703,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "50-88 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Courtyard. Sour fish ¥68",
-        "amapUrl": "https://www.amap.com/search?query=万木春+凤凰古城"
+        "amapUrl": "https://www.amap.com/search?query=万木春"
       },
       { 
         "nombre": "Tuojiang Renjia 沱江人家", 
@@ -712,7 +712,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "45-85 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Night lights view. Popular",
-        "amapUrl": "https://www.amap.com/search?query=沱江人家+凤凰"
+        "amapUrl": "https://www.amap.com/search?query=沱江人家"
       },
       { 
         "nombre": "Shen Congwen Bar Street 沈从文酒吧街", 
@@ -721,7 +721,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "12-35 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Street food + beer. Riverside stroll",
-        "amapUrl": "https://www.amap.com/search?query=沈从文酒吧街+凤凰"
+        "amapUrl": "https://www.amap.com/search?query=沈从文酒吧街"
       },
       { 
         "nombre": "Ancient Tea House 古城茶楼", 
@@ -730,7 +730,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "13-25 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Balcony views. Ginger tea ¥13",
-        "amapUrl": "https://www.amap.com/search?query=古城茶楼+凤凰"
+        "amapUrl": "https://www.amap.com/search?query=古城茶楼"
       },
       { 
         "nombre": "Hongqiao Snack Stalls 虹桥小吃", 
@@ -739,12 +739,12 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "6-18 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "¥6 ginger candy. ¥8 river snails",
-        "amapUrl": "https://www.amap.com/search?query=虹桥小吃+凤凰古城"
+        "amapUrl": "https://www.amap.com/search?query=虹桥小吃"
       }
     ],
     "rutas": [
       { "nombre": "Ancient Town Slow Food", "duracion": "Full day", "stops": "Tea house breakfast → Lunch at Dashi → Sunset beer → Night market", "costo": "¥60-120", "distancia": "1km old town", "amapUrl": "https://www.amap.com/search?query=凤凰古城+小吃" },
-      { "nombre": "Tuojiang River Dining", "duracion": "Evening", "stops": "Lao Genjiu → River walk → Bar street → Wanmuchun", "costo": "¥100-180", "distancia": "Riverside loop", "amapUrl": "https://www.amap.com/search?query=沱江+凤凰古城" }
+      { "nombre": "Tuojiang River Dining", "duracion": "Evening", "stops": "Lao Genjiu → River walk → Bar street → Wanmuchun", "costo": "¥100-180", "distancia": "Riverside loop", "amapUrl": "https://www.amap.com/search?query=沱江" }
     ],
     "imagen": "/images/fenghuang.svg",
     "color": "#CD853F"
@@ -768,7 +768,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "5-10 CNY", 
         "rating": "⭐⭐⭐⭐⭐", 
         "destacado": "ORIGINAL film location. 3,000+ bowls/day",
-        "amapUrl": "https://www.amap.com/search?query=刘晓庆米豆腐+芙蓉镇"
+        "amapUrl": "https://www.amap.com/search?query=刘晓庆米豆腐"
       },
       { 
         "nombre": "Waterfall Viewing Deck 观景台", 
@@ -777,7 +777,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "50-70 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "BEST waterfall view. Night lights magical",
-        "amapUrl": "https://www.amap.com/search?query=观景台餐厅+芙蓉镇"
+        "amapUrl": "https://www.amap.com/search?query=观景台餐厅"
       },
       { 
         "nombre": "Waterfall Restaurant 观瀑餐厅", 
@@ -786,7 +786,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "118 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Premium private-kitchen. Waterfall views",
-        "amapUrl": "https://www.amap.com/search?query=观瀑餐厅+芙蓉镇"
+        "amapUrl": "https://www.amap.com/search?query=观瀑餐厅"
       },
       { 
         "nombre": "World's #1 Snail 天下第一螺", 
@@ -795,7 +795,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "40-60 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Mengdong River snails ¥28-38",
-        "amapUrl": "https://www.amap.com/search?query=天下第一螺+芙蓉镇"
+        "amapUrl": "https://www.amap.com/search?query=天下第一螺"
       },
       { 
         "nombre": "Yuweizuan 御味轩", 
@@ -804,7 +804,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "55 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Cured meat hotpot ¥68-88. Very spicy",
-        "amapUrl": "https://www.amap.com/search?query=御味轩+芙蓉镇"
+        "amapUrl": "https://www.amap.com/search?query=御味轩"
       },
       { 
         "nombre": "Tujia Memory 土家记忆", 
@@ -813,7 +813,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "50-80 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Ten Great Bowls banquet. Ethnic décor",
-        "amapUrl": "https://www.amap.com/search?query=土家记忆+芙蓉镇"
+        "amapUrl": "https://www.amap.com/search?query=土家记忆"
       },
       { 
         "nombre": "Haoke Lai 豪客来", 
@@ -822,7 +822,7 @@ export const ciudadesData: Record<string, Ciudad> = {
         "precio": "50-80 CNY", 
         "rating": "⭐⭐⭐⭐", 
         "destacado": "Outside scenic. Bandit-style duck",
-        "amapUrl": "https://www.amap.com/search?query=豪客来+芙蓉镇"
+        "amapUrl": "https://www.amap.com/search?query=豪客来"
       }
     ],
     "rutas": [
