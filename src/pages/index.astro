@@ -3,6 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import { ciudadesData } from '../data/ciudades';
 
 const ciudades = Object.entries(ciudadesData);
+
+// Tasa de cambio CNY a EUR (Marzo 2026)
+const CNY_TO_EUR = 0.13;
+const cnyToEur = (cny: number) => Math.round(cny * CNY_TO_EUR * 10) / 10;
 ---
 
 <Layout title="Gastronomía China 2026 - Dashboard">
@@ -26,7 +30,7 @@ const ciudades = Object.entries(ciudadesData);
         </div>
         <div class="bg-white/10 backdrop-blur px-8 py-4 rounded-lg">
           <div class="text-4xl font-bold text-chinese-gold">¥5-2000</div>
-          <div class="text-sm">Rango precio</div>
+          <div class="text-sm">Rango precio (0.7€-260€)</div>
         </div>
         <div class="bg-white/10 backdrop-blur px-8 py-4 rounded-lg">
           <div class="text-4xl font-bold text-chinese-gold">20+</div>
@@ -66,6 +70,7 @@ const ciudades = Object.entries(ciudadesData);
                   {data.promedio_diario}
                   <span class="text-sm font-normal text-gray-500">CNY/día</span>
                 </div>
+                <div class="text-xs text-gray-400">~{cnyToEur(data.promedio_diario)} €</div>
               </div>
               <div class="text-right">
                 <div class="text-sm text-gray-500">Restaurantes</div>
@@ -110,11 +115,11 @@ const ciudades = Object.entries(ciudadesData);
                 <div class="w-32 font-semibold text-right">{nombre}</div>
                 <div class="flex-1">
                   <div class="bg-gray-200 rounded-full h-8 relative overflow-hidden">
-                    <div 
+                    <div
                       class="h-full rounded-full flex items-center px-4 text-white font-bold text-sm transition-all"
                       style={`width: ${(data.promedio_diario / 280) * 100}%; background-color: ${data.color}`}
                     >
-                      {data.promedio_diario} CNY
+                      {data.promedio_diario} CNY ({cnyToEur(data.promedio_diario)} €)
                     </div>
                   </div>
                 </div>
@@ -125,9 +130,9 @@ const ciudades = Object.entries(ciudadesData);
 
         <div class="mt-8 p-6 bg-chinese-gold/10 rounded-lg border-l-4 border-chinese-gold">
           <p class="text-sm text-gray-700">
-            💡 <strong>Mejor Valor:</strong> Fenghuang (80 CNY/día) • 
-            <strong>Más Premium:</strong> Shanghai (268 CNY/día) • 
-            <strong>Hotpot Capital:</strong> Chongqing (100 CNY/día)
+            💡 <strong>Mejor Valor:</strong> Fenghuang (80 CNY/~10€ día) •
+            <strong>Más Premium:</strong> Shanghai (268 CNY/~35€ día) •
+            <strong>Hotpot Capital:</strong> Chongqing (100 CNY/~13€ día)
           </p>
         </div>
       </div>
