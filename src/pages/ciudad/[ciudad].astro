@@ -46,7 +46,7 @@ const getRestaurantImage = (categoria: string, idx: number) => {
   <!-- Hero -->
   <section class="py-16" style={`background: linear-gradient(135deg, ${data.color} 0%, ${data.color}dd 100%)`}>
     <div class="container mx-auto px-4">
-      <a href="/" class="text-white/80 hover:text-white mb-4 inline-flex items-center gap-2">
+      <a href="/poc-chinese-gastronomy/" class="text-white/80 hover:text-white mb-4 inline-flex items-center gap-2">
         ← Volver
       </a>
       
@@ -233,8 +233,8 @@ const getRestaurantImage = (categoria: string, idx: number) => {
       {getCiudades()
         .filter(c => c !== ciudadNombre)
         .map(otraCiudad => (
-          <a 
-            href={`/ciudad/${otraCiudad.toLowerCase()}`}
+          <a
+            href={`/poc-chinese-gastronomy/ciudad/${otraCiudad.toLowerCase()}`}
             class="px-6 py-3 bg-white rounded-lg shadow hover:shadow-lg transition border-2 border-transparent hover:border-chinese-red"
           >
             {otraCiudad}
