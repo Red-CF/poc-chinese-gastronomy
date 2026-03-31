@@ -24,26 +24,16 @@ const preciosArray = Object.entries(data.precios).map(([cat, rango]) => ({
 // Obtener categorías únicas
 const categorias = [...new Set(data.restaurantes.map(r => r.categoria))];
 
-// Función para generar URL de imagen placeholder por categoría
-const getRestaurantImage = (categoria: string, idx: number) => {
-  // Usar placehold.co con colores por categoría - 100% confiable
-  const colors: Record<string, { bg: string; text: string }> = {
-    'Restaurante': { bg: 'DC143C', text: 'FFFFFF' },
-    'Cafetería': { bg: '8B4513', text: 'FFFFFF' },
-    'Casa de Té': { bg: '228B22', text: 'FFFFFF' },
-    'Bar/Cocktail': { bg: '4B0082', text: 'FFFFFF' },
-    'Vida Nocturna': { bg: '2F2F4F', text: 'FFFFFF' }
+// Función para obtener imagen estática por categoría
+const getRestaurantImage = (categoria: string) => {
+  const images: Record<string, string> = {
+    'Restaurante': '/poc-chinese-gastronomy/images/restaurantes/restaurante.svg',
+    'Cafetería': '/poc-chinese-gastronomy/images/restaurantes/cafeteria.svg',
+    'Casa de Té': '/poc-chinese-gastronomy/images/restaurantes/casa-de-te.svg',
+    'Bar/Cocktail': '/poc-chinese-gastronomy/images/restaurantes/bar-cocktail.svg',
+    'Vida Nocturna': '/poc-chinese-gastronomy/images/restaurantes/vida-nocturna.svg'
   };
-  const icons: Record<string, string> = {
-    'Restaurante': '🍜',
-    'Cafetería': '☕',
-    'Casa de Té': '🍵',
-    'Bar/Cocktail': '🍸',
-    'Vida Nocturna': '🌃'
-  };
-  const color = colors[categoria] || { bg: '808080', text: 'FFFFFF' };
-  const icon = icons[categoria] || '🍽️';
-  return `https://placehold.co/400x200/${color.bg}/${color.text}?text=${encodeURIComponent(icon + ' ' + categoria)}`;
+  return images[categoria] || '/poc-chinese-gastronomy/images/restaurantes/restaurante.svg';
 };
 ---
 
