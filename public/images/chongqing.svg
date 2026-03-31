@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="chongqingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc143c"/>
+      <stop offset="50%" style="stop-color:#8b0000"/>
+      <stop offset="100%" style="stop-color:#4a0000"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#chongqingGrad)"/>
+
+  <!-- Mountain layers -->
+  <polygon points="0,250 100,150 200,250" fill="#2d0000"/>
+  <polygon points="150,250 250,120 350,250" fill="#3d0000"/>
+  <polygon points="0,250 80,180 180,250" fill="#4a0000"/>
+
+  <!-- Yangtze River -->
+  <path d="M0,220 Q100,200 200,220 T400,220 L400,250 L0,250 Z" fill="#1a3a5c"/>
+
+  <!-- Hongya Cave stilt houses -->
+  <rect x="50" y="140" width="60" height="80" fill="#8b4513"/>
+  <rect x="55" y="145" width="10" height="10" fill="#ffd700"/>
+  <rect x="70" y="145" width="10" height="10" fill="#ffd700"/>
+  <rect x="85" y="145" width="10" height="10" fill="#ffd700"/>
+  <rect x="55" y="160" width="10" height="10" fill="#ffd700"/>
+  <rect x="70" y="160" width="10" height="10" fill="#ffd700"/>
+  <rect x="85" y="160" width="10" height="10" fill="#ffd700"/>
+  <rect x="55" y="175" width="10" height="10" fill="#ffd700"/>
+  <rect x="70" y="175" width="10" height="10" fill="#ffd700"/>
+  <rect x="85" y="175" width="10" height="10" fill="#ffd700"/>
+  <line x1="50" y1="220" x2="50" y2="140" stroke="#4a2800" stroke-width="3"/>
+  <line x1="70" y1="220" x2="70" y2="140" stroke="#4a2800" stroke-width="3"/>
+  <line x1="90" y1="220" x2="90" y2="140" stroke="#4a2800" stroke-width="3"/>
+  <line x1="110" y1="220" x2="110" y2="140" stroke="#4a2800" stroke-width="3"/>
+
+  <!-- Modern buildings -->
+  <rect x="200" y="100" width="40" height="120" fill="#1a1a2e"/>
+  <rect x="250" y="80" width="50" height="140" fill="#16213e"/>
+  <rect x="310" y="110" width="35" height="110" fill="#0f3460"/>
+
+  <!-- Hotpot steam -->
+  <circle cx="150" cy="200" r="5" fill="#ffffff" opacity="0.5"/>
+  <circle cx="160" cy="190" r="7" fill="#ffffff" opacity="0.4"/>
+  <circle cx="155" cy="180" r="6" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="200" y="280" text-anchor="middle" fill="#ffd700" font-size="24" font-weight="bold">重庆</text>
+  <text x="200" y="295" text-anchor="middle" fill="#ffffff" font-size="12">Chongqing</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="fenghuangGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#cd853f"/>
+      <stop offset="50%" style="stop-color:#8b4513"/>
+      <stop offset="100%" style="stop-color:#4a2800"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#fenghuangGrad)"/>
+
+  <!-- Tuojiang River -->
+  <rect x="0" y="200" width="400" height="100" fill="#1a3a5c"/>
+
+  <!-- Ancient stilt houses -->
+  <rect x="30" y="120" width="80" height="80" fill="#8b4513"/>
+  <polygon points="30,120 70,90 110,120" fill="#4a2800"/>
+  <line x1="40" y1="200" x2="40" y2="120" stroke="#4a2800" stroke-width="3"/>
+  <line x1="60" y1="200" x2="60" y2="120" stroke="#4a2800" stroke-width="3"/>
+  <line x1="80" y1="200" x2="80" y2="120" stroke="#4a2800" stroke-width="3"/>
+  <line x1="100" y1="200" x2="100" y2="120" stroke="#4a2800" stroke-width="3"/>
+  <rect x="45" y="135" width="15" height="15" fill="#ffd700" opacity="0.8"/>
+  <rect x="75" y="135" width="15" height="15" fill="#ffd700" opacity="0.8"/>
+  <rect x="45" y="160" width="15" height="15" fill="#ffd700" opacity="0.6"/>
+  <rect x="75" y="160" width="15" height="15" fill="#ffd700" opacity="0.6"/>
+
+  <rect x="140" y="130" width="70" height="70" fill="#654321"/>
+  <polygon points="140,130 175,100 210,130" fill="#4a2800"/>
+  <line x1="150" y1="200" x2="150" y2="130" stroke="#4a2800" stroke-width="3"/>
+  <line x1="175" y1="200" x2="175" y2="130" stroke="#4a2800" stroke-width="3"/>
+  <line x1="200" y1="200" x2="200" y2="130" stroke="#4a2800" stroke-width="3"/>
+  <rect x="155" y="145" width="12" height="12" fill="#ffd700" opacity="0.7"/>
+  <rect x="185" y="145" width="12" height="12" fill="#ffd700" opacity="0.7"/>
+
+  <!-- Hongqiao Bridge -->
+  <rect x="240" y="170" width="120" height="10" fill="#8b0000"/>
+  <rect x="250" y="150" width="10" height="20" fill="#8b0000"/>
+  <rect x="340" y="150" width="10" height="20" fill="#8b0000"/>
+  <polygon points="250,150 300,120 350,150" fill="#a0522d"/>
+
+  <!-- Red lanterns -->
+  <circle cx="260" cy="175" r="5" fill="#dc143c"/>
+  <circle cx="280" cy="175" r="5" fill="#dc143c"/>
+  <circle cx="300" cy="175" r="5" fill="#dc143c"/>
+  <circle cx="320" cy="175" r="5" fill="#dc143c"/>
+
+  <!-- Moon -->
+  <circle cx="350" cy="50" r="25" fill="#ffd700" opacity="0.8"/>
+
+  <!-- Title -->
+  <text x="200" y="280" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold">凤凰古城</text>
+  <text x="200" y="295" text-anchor="middle" fill="#ffd700" font-size="12">Fenghuang</text>
+</svg>

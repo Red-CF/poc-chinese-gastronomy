@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="chengduGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b8860b"/>
+      <stop offset="50%" style="stop-color:#228b22"/>
+      <stop offset="100%" style="stop-color:#006400"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#chengduGrad)"/>
+
+  <!-- Bamboo forest -->
+  <rect x="20" y="150" width="8" height="120" fill="#228b22"/>
+  <rect x="40" y="140" width="8" height="130" fill="#2e8b2e"/>
+  <rect x="60" y="155" width="8" height="115" fill="#228b22"/>
+  <rect x="80" y="145" width="8" height="125" fill="#2e8b2e"/>
+  <rect x="100" y="160" width="8" height="110" fill="#228b22"/>
+
+  <!-- Bamboo leaves -->
+  <ellipse cx="24" cy="145" rx="15" ry="5" fill="#228b22"/>
+  <ellipse cx="44" cy="135" rx="15" ry="5" fill="#2e8b2e"/>
+  <ellipse cx="64" cy="150" rx="15" ry="5" fill="#228b22"/>
+  <ellipse cx="84" cy="140" rx="15" ry="5" fill="#2e8b2e"/>
+
+  <!-- Panda -->
+  <ellipse cx="250" cy="200" rx="40" ry="35" fill="#ffffff"/>
+  <ellipse cx="230" cy="190" rx="12" ry="10" fill="#000000"/>
+  <ellipse cx="270" cy="190" rx="12" ry="10" fill="#000000"/>
+  <circle cx="230" cy="190" r="4" fill="#ffffff"/>
+  <circle cx="270" cy="190" r="4" fill="#ffffff"/>
+  <ellipse cx="250" cy="200" rx="8" ry="6" fill="#000000"/>
+  <ellipse cx="210" cy="210" rx="15" ry="20" fill="#000000"/>
+  <ellipse cx="290" cy="210" rx="15" ry="20" fill="#000000"/>
+  <ellipse cx="250" cy="230" rx="20" ry="15" fill="#000000"/>
+
+  <!-- Teahouse -->
+  <rect x="300" y="160" width="70" height="60" fill="#8b4513"/>
+  <polygon points="300,160 335,130 370,160" fill="#8b0000"/>
+  <rect x="320" y="180" width="30" height="40" fill="#654321"/>
+
+  <!-- Title -->
+  <text x="200" y="280" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold">成都</text>
+  <text x="200" y="295" text-anchor="middle" fill="#ffd700" font-size="12">Chengdu</text>
+</svg>

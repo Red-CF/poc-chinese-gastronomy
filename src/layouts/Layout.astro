@@ -1,0 +1,43 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Dashboard gastronómico de ciudades chinas 2026" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-gray-50">
+    <nav class="bg-chinese-red text-white shadow-lg">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="text-2xl font-heading flex items-center gap-2">
+            🍜 Gastronomía China 2026
+          </a>
+          <div class="hidden md:flex gap-6">
+            <a href="/" class="hover:text-chinese-gold transition">Inicio</a>
+            <a href="#ciudades" class="hover:text-chinese-gold transition">Ciudades</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <slot />
+
+    <footer class="bg-chinese-dark text-white py-8 mt-16">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-sm">Dashboard Gastronómico China 2026 | Datos de Dianping, Meituan y Opiniones Locales</p>
+        <p class="text-xs mt-2 text-gray-400">6 Ciudades • 50+ Restaurantes • Datos Actualizados</p>
+      </div>
+    </footer>
+  </body>
+</html>

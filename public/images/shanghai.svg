@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="shanghaiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#shanghaiGrad)"/>
+
+  <!-- Oriental Pearl Tower -->
+  <rect x="180" y="80" width="8" height="140" fill="#e94560"/>
+  <circle cx="184" cy="110" r="15" fill="#e94560"/>
+  <circle cx="184" cy="160" r="20" fill="#e94560"/>
+  <circle cx="184" cy="200" r="12" fill="#e94560"/>
+
+  <!-- Shanghai Tower -->
+  <polygon points="220,220 230,60 240,60 250,220" fill="#0f3460"/>
+
+  <!-- Jin Mao Tower -->
+  <polygon points="140,220 150,100 160,100 170,220" fill="#16213e"/>
+
+  <!-- Bund buildings -->
+  <rect x="20" y="180" width="40" height="40" fill="#1a1a2e"/>
+  <rect x="70" y="160" width="50" height="60" fill="#16213e"/>
+  <rect x="280" y="170" width="60" height="50" fill="#1a1a2e"/>
+  <rect x="350" y="190" width="30" height="30" fill="#0f3460"/>
+
+  <!-- Huangpu River -->
+  <rect x="0" y="230" width="400" height="70" fill="#1a3a5c"/>
+
+  <!-- Lights on river -->
+  <circle cx="100" cy="250" r="3" fill="#ffd700"/>
+  <circle cx="150" cy="260" r="2" fill="#ffd700"/>
+  <circle cx="200" cy="245" r="3" fill="#ffd700"/>
+  <circle cx="280" cy="255" r="2" fill="#ffd700"/>
+  <circle cx="320" cy="248" r="3" fill="#ffd700"/>
+
+  <!-- Title -->
+  <text x="200" y="280" text-anchor="middle" fill="#ffd700" font-size="24" font-weight="bold">上海</text>
+  <text x="200" y="295" text-anchor="middle" fill="#ffffff" font-size="12">Shanghai</text>
+</svg>

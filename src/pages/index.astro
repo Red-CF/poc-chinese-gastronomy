@@ -1,0 +1,157 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ciudadesData } from '../data/ciudades';
+
+const ciudades = Object.entries(ciudadesData);
+---
+
+<Layout title="Gastronomía China 2026 - Dashboard">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-chinese-red to-red-700 text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-5xl md:text-6xl font-heading mb-6">
+        🥘 Guía Gastronómica China 2026
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+        7 ciudades • 150+ restaurantes y cafeterías • Rutas gastronómicas • Datos Dianping/Meituan 2026
+      </p>
+      <div class="flex flex-wrap justify-center gap-8 mt-12">
+        <div class="bg-white/10 backdrop-blur px-8 py-4 rounded-lg">
+          <div class="text-4xl font-bold text-chinese-gold">7</div>
+          <div class="text-sm">Ciudades</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur px-8 py-4 rounded-lg">
+          <div class="text-4xl font-bold text-chinese-gold">150+</div>
+          <div class="text-sm">Establecimientos</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur px-8 py-4 rounded-lg">
+          <div class="text-4xl font-bold text-chinese-gold">¥5-2000</div>
+          <div class="text-sm">Rango precio</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur px-8 py-4 rounded-lg">
+          <div class="text-4xl font-bold text-chinese-gold">20+</div>
+          <div class="text-sm">Rutas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ciudades Grid -->
+  <section id="ciudades" class="container mx-auto px-4 py-16">
+    <h2 class="text-4xl font-heading text-chinese-red mb-12 text-center">
+      Explora las Ciudades
+    </h2>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {ciudades.map(([nombre, data]) => (
+        <a
+          href={`/ciudad/${nombre.toLowerCase()}`}
+          class="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2"
+        >
+          <div class="h-48 relative overflow-hidden">
+            <img src={data.imagen} alt={nombre} class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <h3 class="text-2xl font-heading">{nombre}</h3>
+              <span class="text-sm bg-white/20 px-2 py-1 rounded">{data.tier}</span>
+            </div>
+          </div>
+          
+          <div class="p-6">
+            <p class="text-gray-600 mb-4 line-clamp-2">{data.descripcion}</p>
+            
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <div class="text-3xl font-bold" style={`color: ${data.color}`}>
+                  {data.promedio_diario}
+                  <span class="text-sm font-normal text-gray-500">CNY/día</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="text-sm text-gray-500">Restaurantes</div>
+                <div class="text-xl font-bold text-chinese-gold">{data.restaurantes.length}+</div>
+              </div>
+            </div>
+
+            <div class="border-t pt-4">
+              <div class="text-sm text-gray-500 mb-2">Especialidades:</div>
+              <div class="flex flex-wrap gap-2">
+                {data.especialidades.slice(0, 3).map(esp => (
+                  <span class="text-xs bg-gray-100 px-2 py-1 rounded">
+                    {esp.split(' ').slice(0, 3).join(' ')}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div class="mt-4 text-chinese-red font-semibold flex items-center gap-2 group-hover:gap-4 transition-all">
+              Ver detalles 
+              <span class="text-xl">→</span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Comparación Rápida -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-heading text-chinese-red mb-12 text-center">
+        Comparación de Precios
+      </h2>
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="space-y-4">
+          {ciudades
+            .sort((a, b) => a[1].promedio_diario - b[1].promedio_diario)
+            .map(([nombre, data]) => (
+              <div class="flex items-center gap-4">
+                <div class="w-32 font-semibold text-right">{nombre}</div>
+                <div class="flex-1">
+                  <div class="bg-gray-200 rounded-full h-8 relative overflow-hidden">
+                    <div 
+                      class="h-full rounded-full flex items-center px-4 text-white font-bold text-sm transition-all"
+                      style={`width: ${(data.promedio_diario / 280) * 100}%; background-color: ${data.color}`}
+                    >
+                      {data.promedio_diario} CNY
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
+        <div class="mt-8 p-6 bg-chinese-gold/10 rounded-lg border-l-4 border-chinese-gold">
+          <p class="text-sm text-gray-700">
+            💡 <strong>Mejor Valor:</strong> Fenghuang (80 CNY/día) • 
+            <strong>Más Premium:</strong> Shanghai (268 CNY/día) • 
+            <strong>Hotpot Capital:</strong> Chongqing (100 CNY/día)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-gradient-to-r from-chinese-dark to-blue-900 text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-heading mb-4">¿Listo para tu aventura gastronómica?</h2>
+      <p class="text-lg mb-8 max-w-2xl mx-auto">
+        Explora 7 ciudades desde Shanghai hasta Furong Town. De ¥5 rice tofu bajo cascadas a ¥1,000 Michelin 2-star tasting menus
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="bg-white/10 backdrop-blur px-6 py-3 rounded-lg">
+          📱 Dianping (大众点评)
+        </div>
+        <div class="bg-white/10 backdrop-blur px-6 py-3 rounded-lg">
+          📱 Meituan (美团)
+        </div>
+        <div class="bg-white/10 backdrop-blur px-6 py-3 rounded-lg">
+          ☕ Luckin Coffee App
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
