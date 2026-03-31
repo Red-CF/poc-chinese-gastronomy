@@ -111,14 +111,14 @@ const cnyToEur = (cny: number) => Math.round(cny * CNY_TO_EUR * 10) / 10;
           {ciudades
             .sort((a, b) => a[1].promedio_diario - b[1].promedio_diario)
             .map(([nombre, data]) => {
-              const barWidth = Math.max((data.promedio_diario / 280) * 100, 30);
+              const barWidth = Math.max((data.promedio_diario / 280) * 100, 35);
               return (
-                <div class="flex items-center gap-4">
-                  <div class="w-32 font-semibold text-right">{nombre}</div>
-                  <div class="flex-1">
-                    <div class="bg-gray-200 rounded-full h-10 relative overflow-hidden">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                  <div class="sm:w-32 font-semibold text-center sm:text-right">{nombre}</div>
+                  <div class="flex-1 w-full">
+                    <div class="bg-gray-200 rounded-full h-12 relative overflow-hidden">
                       <div
-                        class="h-full rounded-full flex items-center px-4 text-white font-bold text-xs md:text-sm transition-all whitespace-nowrap"
+                        class="h-full rounded-full flex items-center justify-center sm:justify-end px-4 text-white font-bold text-xs sm:text-sm transition-all whitespace-nowrap"
                         style={`width: ${barWidth}%; background-color: ${data.color}`}
                       >
                         {data.promedio_diario} CNY ({cnyToEur(data.promedio_diario)} €)
