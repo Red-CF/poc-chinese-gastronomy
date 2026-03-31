@@ -124,18 +124,34 @@ const categorias = [...new Set(data.restaurantes.map(r => r.categoria))];
 
       <!-- Grid de Restaurantes -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="restaurantes-grid">
-        {data.restaurantes.map((rest, idx) => (
+        {data.restaurantes.map((rest, idx) => {
+          // Generar imagen placeholder basada en categoría
+          const getCategoryKeyword = (cat: string) => {
+            const keywords: Record<string, string> = {
+              'Restaurante': 'chinese+food',
+              'Cafetería': 'coffee+shop',
+              'Casa de Té': 'tea+house',
+              'Bar/Cocktail': 'cocktail+bar',
+              'Vida Nocturna': 'nightclub'
+            };
+            return keywords[cat] || 'restaurant';
+          };
+          const keyword = getCategoryKeyword(rest.categoria);
+          const imgUrl = `https://image.pollinations.ai/prompt/${keyword}?width=400&height=200&seed=${idx}`;
+
+          return (
           <div class="restaurant-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden opacity-100 translate-y-0" data-categoria={rest.categoria}>
-            <div class="h-32 bg-gradient-to-br from-gray-300 to-gray-400 relative">
-              <div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-xl">
+            <div class="h-32 relative overflow-hidden">
+              <img src={imgUrl} alt={rest.nombre} class="w-full h-full object-cover" loading="lazy" />
+              <div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-xl shadow-md">
                 {rest.rating}
               </div>
               <div class="absolute top-4 left-4">
-                <span class="bg-chinese-gold text-white px-3 py-1 rounded text-xs font-bold">
+                <span class="bg-chinese-gold text-white px-3 py-1 rounded text-xs font-bold shadow-md">
                   #{idx + 1}
                 </span>
               </div>
-              <div class="absolute bottom-3 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs">
+              <div class="absolute bottom-3 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs shadow-md">
                 {rest.categoria}
               </div>
             </div>
@@ -177,7 +193,7 @@ const categorias = [...new Set(data.restaurantes.map(r => r.categoria))];
               )}
             </div>
           </div>
-        ))}
+        );})}
       </div>
     </div>
   </section>
