@@ -23,6 +23,23 @@ const preciosArray = Object.entries(data.precios).map(([cat, rango]) => ({
 
 // Obtener categorías únicas
 const categorias = [...new Set(data.restaurantes.map(r => r.categoria))];
+
+// Función para generar URL de imagen placeholder por categoría
+const getCategoryKeyword = (cat: string) => {
+  const keywords: Record<string, string> = {
+    'Restaurante': 'chinese+food',
+    'Cafetería': 'coffee+shop',
+    'Casa de Té': 'tea+house',
+    'Bar/Cocktail': 'cocktail+bar',
+    'Vida Nocturna': 'nightclub'
+  };
+  return keywords[cat] || 'restaurant';
+};
+
+const getRestaurantImage = (categoria: string, idx: number) => {
+  const keyword = getCategoryKeyword(categoria);
+  return `https://image.pollinations.ai/prompt/${keyword}?width=400&height=200&seed=${idx}`;
+};
 ---
 
 <Layout title={`${ciudadNombre} - Guía Gastronómica`}>
@@ -124,25 +141,10 @@ const categorias = [...new Set(data.restaurantes.map(r => r.categoria))];
 
       <!-- Grid de Restaurantes -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="restaurantes-grid">
-        {data.restaurantes.map((rest, idx) => {
-          // Generar imagen placeholder basada en categoría
-          const getCategoryKeyword = (cat: string) => {
-            const keywords: Record<string, string> = {
-              'Restaurante': 'chinese+food',
-              'Cafetería': 'coffee+shop',
-              'Casa de Té': 'tea+house',
-              'Bar/Cocktail': 'cocktail+bar',
-              'Vida Nocturna': 'nightclub'
-            };
-            return keywords[cat] || 'restaurant';
-          };
-          const keyword = getCategoryKeyword(rest.categoria);
-          const imgUrl = `https://image.pollinations.ai/prompt/${keyword}?width=400&height=200&seed=${idx}`;
-
-          return (
+        {data.restaurantes.map((rest, idx) => (
           <div class="restaurant-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden opacity-100 translate-y-0" data-categoria={rest.categoria}>
             <div class="h-32 relative overflow-hidden">
-              <img src={imgUrl} alt={rest.nombre} class="w-full h-full object-cover" loading="lazy" />
+              <img src={getRestaurantImage(rest.categoria, idx)} alt={rest.nombre} class="w-full h-full object-cover" loading="lazy" />
               <div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-xl shadow-md">
                 {rest.rating}
               </div>
@@ -193,7 +195,7 @@ const categorias = [...new Set(data.restaurantes.map(r => r.categoria))];
               )}
             </div>
           </div>
-        );})}
+        ))}
       </div>
     </div>
   </section>
